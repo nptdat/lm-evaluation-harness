@@ -1,0 +1,48 @@
+{
+    "results": {
+      "jsquad-1.1-0.3": {
+        "exact_match": 56.39351643403872,
+        "f1": 66.85247695170715
+      },
+      "jcommonsenseqa-1.1-0.3": {
+        "acc": 0.7917783735478106,
+        "acc_stderr": 0.012143498769717128,
+        "acc_norm": 0.7587131367292225,
+        "acc_norm_stderr": 0.01279630959503522
+      },
+      "jnli-1.1-0.3": {
+        "acc": 0.5184880854560394,
+        "acc_stderr": 0.010129822953472856,
+        "acc_norm": 0.47000821692686934,
+        "acc_norm_stderr": 0.010118502399714562
+      },
+      "marc_ja-1.1-0.3": {
+        "acc": 0.8323310930314821,
+        "acc_stderr": 0.004968609131681578,
+        "acc_norm": 0.8323310930314821,
+        "acc_norm_stderr": 0.004968609131681578
+      }
+    },
+    "versions": {
+      "jsquad-1.1-0.3": 1.1,
+      "jcommonsenseqa-1.1-0.3": 1.1,
+      "jnli-1.1-0.3": 1.1,
+      "marc_ja-1.1-0.3": 1.1
+    },
+    "config": {
+      "model": "hf-causal",
+      "model_args": "pretrained=stabilityai/japanese-stablelm-base-alpha-7b,tokenizer=novelai/nerdstash-tokenizer-v1,use_fast=False,trust_remote_code=True",
+      "num_fewshot": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "batch_size": null,
+      "device": "cuda",
+      "no_cache": false,
+      "limit": null,
+      "bootstrap_iters": 100000,
+      "description_dict": {}
+    }
+  }
